@@ -1,38 +1,38 @@
 #!/usr/bin/python3
-# spymer v6
-# Author: FSystem88
-class spymer:
+# Spamer v2.4
+# Author: DexMP
+class spamer:
 	def main(self):
 		import requests, random, datetime, sys, time, argparse, os
 		from colorama import Fore, Back, Style
 		os.system("clear")
 		print(Fore.GREEN + '''
-8888888888888888888888888
-8888888888888888888888888
-888        888        888
-888  888888888  8888  888
-888  888888888  888888888
-888  888888888  888888888
-888        888        888
-888  888888888888888  888
-888  888888888888888  888
-888  888888888  8888  888
-888  888888888        888
-8888888888888888888888888
-8888888888888888888888888
-8888    FSystem88    8888
-8888   SMS Spammer   8888
-8888   v.6 (final)   8888
-8888888888888888888888888
-8888888888888888888888888'''+Style.RESET_ALL)
+6666666666666666666666666
+6666   666   666 666 6666
+6666 66 66 666666 6 66666
+6666 66 66   66666 666666
+6666 66 66 666666 6 66666
+6666   666   666 666 6666
+6666666666666666666666666
+6666666666666666666666666
+6666666666666666666666666
+6666666666666666666666666
+6666666666666666666666666
+6666666666666666666666666
+6666666666666666666666666
+6666       DexMP     6666
+6666   SMS Spammer   6666
+6666  v. 2.4 (final) 6666
+6666666666666666666666666
+6666666666666666666666666'''+Style.RESET_ALL)
 		print(Style.RESET_ALL)
-		parser = argparse.ArgumentParser(prog='spymer', description="Fucking shit by FSystem88. Возможно что-то уже не работает. Только для России!",epilog='Мой e-mail - FSystem88@bk.ru')
+		parser = argparse.ArgumentParser(prog='spamer', description=" by DexMP",epilog='Почта - matveymp@yandex.ru')
 		parser.add_argument('phonenum', metavar='phone', help='Телефонный номер жертвы (пример: 79991234455)')
 		args = parser.parse_args()
 		_phone = args.phonenum
 
 		if _phone == "update":
-			cmd = os.system("cd && rm -rf ~/spymer && git clone https://github.com/FSystem88/spymer && sh ~/spymer/install.sh")
+			cmd = os.system("cd && rm -rf ~/spamer && git clone https://github.com/DexMP/spamer && sh ~/spamer/install.sh")
 			exit()
 
 		def showstatus(message, type='new'):
@@ -139,5 +139,5 @@ class spymer:
 				print(('{} круг пройден.').format(iteration))
 			except:
 				pass
-spammer = spymer()
+spammer = spamer()
 spammer.main()

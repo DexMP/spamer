@@ -17,25 +17,25 @@ then
 	pkg install dos2unix
 	pip3 install requests
 	pip3 install colorama
-	cp ~/spymer/spammer.py /data/data/com.termux/files/usr/bin/spymer
-	dos2unix /data/data/com.termux/files/usr/bin/spymer
-	chmod 777 /data/data/com.termux/files/usr/bin/spymer
-	spymer
+	cp ~/spamer/spammer.py /data/data/com.termux/files/usr/bin/spamer
+	dos2unix /data/data/com.termux/files/usr/bin/spamer
+	chmod 777 /data/data/com.termux/files/usr/bin/spamer
+	spamer
 else
 	if [ $numb = "2" ]
 	then
 
 		if [ "$(whoami)" != 'root' ]; then
-			echo "У вас нет прав. Запустите install.sh с root правами (sudo sh ~/spymer/install.sh)"
+			echo "У вас нет прав. Запустите install.sh с root правами (sudo sh ~/spamer/install.sh)"
 			exit
 		else
 			apt install python3 python3-pip dos2unix
 			pip3 install requests
 			pip3 install colorama
-			cp ~/spymer/spammer.py /usr/bin/spymer
-			dos2unix /usr/bin/spymer
-			chmod 777 /usr/bin/spymer
-			spymer
+			cp ~/spamer/spammer.py /usr/bin/spamer
+			dos2unix /usr/bin/spamer
+			chmod 777 /usr/bin/spamer
+			spamer
 		fi
 	else
 		echo "Некорректный ввод"
